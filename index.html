@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PosiFut</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,25 +15,74 @@
         <h1>⚽ PosiFut</h1>
 
         <p class="descripcion">
-            Descubre qué posición de fútbol se adapta mejor a tu estilo de juego.
+            Responde estas preguntas y descubre qué posición de fútbol
+            se adapta mejor a tu estilo de juego.
         </p>
 
-        <h2>¿Cuál de estas características te representa más?</h2>
+        <!-- PREGUNTA 1 -->
+        <div class="pregunta">
+            <h2>1. ¿Qué se te da mejor?</h2>
 
-        <select id="caracteristica">
-            <option value="">Selecciona una opción</option>
-            <option value="rapido">Soy rápido</option>
-            <option value="pase">Tengo buen pase</option>
-            <option value="defensa">Defiendo bien</option>
-            <option value="goles">Me gusta marcar goles</option>
-        </select>
+            <select id="pregunta1">
+                <option value="">Selecciona una opción</option>
+                <option value="extremo">La velocidad</option>
+                <option value="medio">Dar buenos pases</option>
+                <option value="defensa">Defender</option>
+                <option value="delantero">Definir frente al arco</option>
+            </select>
+        </div>
 
-        <button id="boton">Ver mi posición</button>
+        <!-- PREGUNTA 2 -->
+        <div class="pregunta">
+            <h2>2. ¿Dónde prefieres jugar?</h2>
+
+            <select id="pregunta2">
+                <option value="">Selecciona una opción</option>
+                <option value="extremo">Por las bandas</option>
+                <option value="medio">En el centro del campo</option>
+                <option value="defensa">Cerca de mi arco</option>
+                <option value="delantero">Cerca del arco rival</option>
+            </select>
+        </div>
+
+        <!-- PREGUNTA 3 -->
+        <div class="pregunta">
+            <h2>3. ¿Qué disfrutas más durante un partido?</h2>
+
+            <select id="pregunta3">
+                <option value="">Selecciona una opción</option>
+                <option value="extremo">Desbordar rivales</option>
+                <option value="medio">Crear jugadas</option>
+                <option value="defensa">Recuperar balones</option>
+                <option value="delantero">Marcar goles</option>
+            </select>
+        </div>
+
+        <!-- PREGUNTA 4 -->
+        <div class="pregunta">
+            <h2>4. ¿Cuál es tu mayor aporte al equipo?</h2>
+
+            <select id="pregunta4">
+                <option value="">Selecciona una opción</option>
+                <option value="extremo">Generar peligro con velocidad</option>
+                <option value="medio">Organizar el juego</option>
+                <option value="defensa">Evitar oportunidades del rival</option>
+                <option value="delantero">Crear oportunidades de gol</option>
+            </select>
+        </div>
+
+        <button id="boton">Descubrir mi posición</button>
 
         <div id="resultado">
-            <h2 id="posicion"></h2>
-            <p id="explicacion"></p>
+            <h2 id="posicion">Tu resultado aparecerá aquí</h2>
+            <p id="explicacion">
+                Completa las cuatro preguntas para recibir una recomendación.
+            </p>
         </div>
+
+        <button id="reiniciar" class="boton-secundario">
+            Hacer el test de nuevo
+        </button>
 
     </div>
 
